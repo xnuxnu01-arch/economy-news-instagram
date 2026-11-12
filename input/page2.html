@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
+body{background:#090b0e;color:#f5f1e8;font-family:Arial,"Malgun Gothic",sans-serif}
+.page{width:1080px;height:1350px;padding:76px 72px;background:radial-gradient(circle at 100% 0%,#302411 0,#090b0e 42%);position:relative;overflow:hidden}
+.brand{font-size:22px;letter-spacing:5px;color:#c9a45c;font-weight:bold}
+.line{height:2px;background:#9b793e;margin:28px 0 48px}
+.label{font-size:22px;color:#d6b16b;letter-spacing:3px;font-weight:bold}
+h1{font-size:57px;line-height:1.25;margin:20px 0 35px;letter-spacing:-2px;word-break:keep-all}
+.headline{font-size:35px;line-height:1.4;font-weight:bold;color:#e6c783;margin-bottom:30px;word-break:keep-all}
+.summary{font-size:25px;line-height:1.65;color:#c9c2b6;margin-bottom:32px;word-break:keep-all}
+.section{border-left:4px solid #b28d4d;padding:3px 0 3px 22px;margin:27px 0}
+.section h2{font-size:23px;color:#d6b16b;margin:0 0 10px;letter-spacing:1px}
+.section p{font-size:23px;line-height:1.55;color:#e2ddd2;margin:0;word-break:keep-all}
+.watch{background:#211b11;border:1px solid #71572d;padding:22px 25px;border-radius:12px;margin-top:30px}
+.watch strong{display:block;color:#e2bd73;font-size:22px;margin-bottom:10px}
+.watch p{font-size:22px;line-height:1.5;margin:0;color:#eee5d4}
+.source{font-size:17px;color:#938b7e;margin-top:24px}
+.footer{position:absolute;bottom:55px;left:72px;right:72px;display:flex;justify-content:space-between;color:#8d877b;font-size:18px;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">ECONOMY INSIGHT</div>
+  <div class="line"></div>
+  <div class="label">DEEP DIVE · TOP 01</div>
+  <h1>{{page2.title}}</h1>
+  <div class="headline">{{page2.news_title}}</div>
+  <div class="summary">{{page2.summary}}</div>
+
+  <div class="section">
+    <h2>WHAT HAPPENED</h2>
+    <p>{{page2.what_happened}}</p>
+  </div>
+  <div class="section">
+    <h2>BACKGROUND</h2>
+    <p>{{page2.background}}</p>
+  </div>
+  <div class="section">
+    <h2>ECONOMIC IMPACT</h2>
+    <p>{{page2.impact}}</p>
+  </div>
+
+  <div class="watch">
+    <strong>WHAT TO WATCH</strong>
+    <p>{{page2.watch_point}}</p>
+  </div>
+  <div class="source">SOURCE : {{page2.source}}</div>
+  <div class="footer"><span>ECONOMY INSIGHT</span><span>02 / 04</span></div>
+</div>
+</body>
+</html>
