@@ -21,13 +21,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: npm
 
       # 3. 패키지 설치
       - name: Install dependencies
         run: npm install
 
-      # 4. Playwright 브라우저 설치
+      # 4. Playwright Chromium 설치
       - name: Install Playwright Chromium
         run: npx playwright install --with-deps chromium
 
@@ -35,7 +34,7 @@ jobs:
       - name: Render JPG images
         run: npm run render
 
-      # 6. JPG 파일 생성 여부 확인
+      # 6. 이미지 4장 생성 확인
       - name: Check generated images
         run: |
           for i in 1 2 3 4
@@ -48,9 +47,10 @@ jobs:
             fi
 
             echo "OK: $FILE"
+            ls -lh "$FILE"
           done
 
-      # 7. 생성된 JPG를 GitHub 저장소에 반영
+      # 7. 생성된 JPG를 GitHub에 저장
       - name: Commit generated JPG images
         run: |
           git config user.name "github-actions[bot]"
@@ -65,7 +65,7 @@ jobs:
             git push
           fi
 
-      # 8. 실행 결과 다운로드용 보관
+      # 8. 실행 결과 보관
       - name: Upload JPG artifacts
         uses: actions/upload-artifact@v4
         with:
