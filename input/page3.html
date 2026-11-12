@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
+body{background:#090b0e;color:#f5f1e8;font-family:Arial,"Malgun Gothic",sans-serif}
+.page{width:1080px;height:1350px;padding:76px 72px;background:radial-gradient(circle at 10% 0%,#2c2110 0,#090b0e 40%);position:relative;overflow:hidden}
+.brand{font-size:22px;letter-spacing:5px;color:#c9a45c;font-weight:bold}
+.line{height:2px;background:#9b793e;margin:28px 0 58px}
+.label{font-size:22px;color:#d6b16b;letter-spacing:3px;font-weight:bold}
+h1{font-size:58px;line-height:1.25;margin:20px 0 50px;letter-spacing:-2px;word-break:keep-all}
+.card{border:1px solid #59482b;background:rgba(255,255,255,.035);padding:35px 34px;border-radius:16px;margin-bottom:35px}
+.rank{font-size:21px;color:#d6b16b;font-weight:bold;letter-spacing:3px;margin-bottom:18px}
+.title{font-size:35px;font-weight:bold;line-height:1.4;margin-bottom:23px;word-break:keep-all}
+.tag{font-size:20px;color:#d6b16b;font-weight:bold;margin:22px 0 8px}
+.text{font-size:24px;line-height:1.6;color:#d0c9bd;word-break:keep-all}
+.divider{height:1px;background:#544329;margin:24px 0}
+.bottom{margin-top:42px;border-left:4px solid #b28d4d;padding:10px 0 10px 22px;color:#d5c5a3;font-size:25px;line-height:1.5;word-break:keep-all}
+.footer{position:absolute;bottom:55px;left:72px;right:72px;display:flex;justify-content:space-between;color:#8d877b;font-size:18px;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">ECONOMY INSIGHT</div>
+  <div class="line"></div>
+  <div class="label">MORE TO KNOW</div>
+  <h1>{{page3.title}}</h1>
+
+  <div class="card">
+    <div class="rank">TOP 02</div>
+    <div class="title">{{page3.news.0.title}}</div>
+    <div class="tag">KEY POINT</div>
+    <div class="text">{{page3.news.0.summary}}</div>
+    <div class="divider"></div>
+    <div class="tag">ECONOMIC IMPACT</div>
+    <div class="text">{{page3.news.0.impact}}</div>
+  </div>
+
+  <div class="card">
+    <div class="rank">TOP 03</div>
+    <div class="title">{{page3.news.1.title}}</div>
+    <div class="tag">KEY POINT</div>
+    <div class="text">{{page3.news.1.summary}}</div>
+    <div class="divider"></div>
+    <div class="tag">ECONOMIC IMPACT</div>
+    <div class="text">{{page3.news.1.impact}}</div>
+  </div>
+
+  <div class="bottom">하나의 뉴스보다 중요한 것은 여러 경제 이슈가 서로 어떤 영향을 주고받는지 이해하는 것입니다.</div>
+  <div class="footer"><span>ECONOMY INSIGHT</span><span>03 / 04</span></div>
+</div>
+</body>
+</html>
