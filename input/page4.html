@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
+body{background:#090b0e;color:#f5f1e8;font-family:Arial,"Malgun Gothic",sans-serif}
+.page{width:1080px;height:1350px;padding:76px 72px;background:radial-gradient(circle at 85% 5%,#302411 0,#090b0e 42%);position:relative;overflow:hidden}
+.brand{font-size:22px;letter-spacing:5px;color:#c9a45c;font-weight:bold}
+.line{height:2px;background:#9b793e;margin:28px 0 65px}
+.label{font-size:22px;color:#d6b16b;letter-spacing:3px;font-weight:bold}
+h1{font-size:68px;line-height:1.2;margin:20px 0 18px;letter-spacing:-3px}
+.subtitle{font-size:25px;color:#aaa397;margin-bottom:58px}
+.section{margin-bottom:48px}
+.section-title{font-size:25px;color:#d6b16b;font-weight:bold;letter-spacing:2px;margin-bottom:24px}
+.point{display:flex;gap:18px;margin:20px 0;align-items:flex-start}
+.number{width:38px;height:38px;flex-shrink:0;border:1px solid #a9874d;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#e0bd78;font-size:19px}
+.point-text{font-size:25px;line-height:1.55;color:#e4ded2;word-break:keep-all}
+.watchbox{background:rgba(255,255,255,.035);border:1px solid #59482b;border-radius:15px;padding:30px 32px;margin-top:20px}
+.watchbox .point-text{font-size:23px}
+.quote{margin-top:48px;padding:35px 30px;border-top:1px solid #8f713f;border-bottom:1px solid #8f713f;text-align:center;color:#e5c783;font-size:30px;line-height:1.5;font-weight:bold;word-break:keep-all}
+.footer{position:absolute;bottom:55px;left:72px;right:72px;display:flex;justify-content:space-between;color:#8d877b;font-size:18px;letter-spacing:2px}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">ECONOMY INSIGHT</div>
+  <div class="line"></div>
+  <div class="label">TODAY'S SUMMARY</div>
+  <h1>{{page4.title}}</h1>
+  <div class="subtitle">오늘의 경제 이슈, 핵심만 다시 정리합니다.</div>
+
+  <div class="section">
+    <div class="section-title">KEY TAKEAWAYS</div>
+    <div class="point"><div class="number">01</div><div class="point-text">{{page4.key_points.0}}</div></div>
+    <div class="point"><div class="number">02</div><div class="point-text">{{page4.key_points.1}}</div></div>
+    <div class="point"><div class="number">03</div><div class="point-text">{{page4.key_points.2}}</div></div>
+  </div>
+
+  <div class="watchbox">
+    <div class="section-title">WHAT TO WATCH NEXT</div>
+    <div class="point"><div class="number">→</div><div class="point-text">{{page4.watch_points.0}}</div></div>
+    <div class="point"><div class="number">→</div><div class="point-text">{{page4.watch_points.1}}</div></div>
+  </div>
+
+  <div class="quote">{{page4.final_message}}</div>
+  <div class="footer"><span>ECONOMY INSIGHT</span><span>04 / 04</span></div>
+</div>
+</body>
+</html>
