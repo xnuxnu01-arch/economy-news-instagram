@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:1080px;height:1350px;overflow:hidden}
+body{background:#090b0e;color:#f5f1e8;font-family:Arial,"Malgun Gothic",sans-serif}
+.page{width:1080px;height:1350px;padding:76px 72px;background:radial-gradient(circle at 90% 5%,#29200f 0,#090b0e 38%);position:relative;overflow:hidden}
+.brand{font-size:22px;letter-spacing:5px;color:#c9a45c;font-weight:bold}
+.line{height:2px;background:#9b793e;margin:28px 0 60px}
+.eyebrow{color:#d5ae64;font-size:23px;letter-spacing:3px;font-weight:bold}
+h1{font-size:68px;line-height:1.2;margin:22px 0 18px;font-weight:900;letter-spacing:-3px}
+.date{color:#a9a49a;font-size:25px}
+.intro{font-size:27px;color:#c7c0b3;margin:38px 0 48px}
+.item{border:1px solid #59482b;background:rgba(255,255,255,.035);padding:30px 32px;margin-bottom:22px;border-radius:15px}
+.rank{color:#d8b46d;font-size:20px;font-weight:bold;letter-spacing:2px;margin-bottom:15px}
+.title{font-size:32px;line-height:1.35;font-weight:bold;margin-bottom:12px;word-break:keep-all}
+.summary{font-size:23px;line-height:1.55;color:#bdb8ad;word-break:keep-all}
+.footer{position:absolute;bottom:55px;left:72px;right:72px;display:flex;justify-content:space-between;color:#8d877b;font-size:18px;letter-spacing:2px}
+.gold{color:#d6b16b}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand">ECONOMY INSIGHT</div>
+  <div class="line"></div>
+  <div class="eyebrow">DAILY ECONOMY BRIEFING</div>
+  <h1>{{page1.title}}</h1>
+  <div class="date">{{page1.subtitle}}</div>
+  <div class="intro">{{page1.intro}}</div>
+
+  <div class="item">
+    <div class="rank">TOP 01</div>
+    <div class="title">{{page1.news_summary.0.title}}</div>
+    <div class="summary">{{page1.news_summary.0.summary}}</div>
+  </div>
+  <div class="item">
+    <div class="rank">TOP 02</div>
+    <div class="title">{{page1.news_summary.1.title}}</div>
+    <div class="summary">{{page1.news_summary.1.summary}}</div>
+  </div>
+  <div class="item">
+    <div class="rank">TOP 03</div>
+    <div class="title">{{page1.news_summary.2.title}}</div>
+    <div class="summary">{{page1.news_summary.2.summary}}</div>
+  </div>
+
+  <div class="footer"><span>ECONOMY INSIGHT</span><span>01 / 04</span></div>
+</div>
+</body>
+</html>
