@@ -1,0 +1,13 @@
+
+{
+  "name": "economy-news-instagram",
+  "version": "1.0.0",
+  "description": "Daily economy news Instagram automation",
+  "type": "module",
+  "scripts": {
+    "render": "node render.js"
+  },
+  "dependencies": {
+    "playwright": "^1.56.0"
+  }
+}
