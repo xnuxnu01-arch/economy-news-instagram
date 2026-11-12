@@ -1,0 +1,116 @@
+
+{
+  "market_date": "2026-11-12",
+  "headline": "오늘의 경제 이슈 TOP 3",
+  "intro": "오늘 꼭 알아야 할 경제 뉴스를 쉽게 정리했습니다.",
+  "news_top3": [
+    {
+      "rank": 1,
+      "category": "글로벌 경제",
+      "title": "테스트 뉴스 제목 1",
+      "summary": "첫 번째 뉴스 요약입니다.",
+      "what_happened": "어떤 일이 발생했는지 설명합니다.",
+      "background": "이 뉴스가 발생한 배경입니다.",
+      "why_it_matters": "이 뉴스가 중요한 이유입니다.",
+      "impact": "국내 경제와 투자자에게 미치는 영향입니다.",
+      "watch_point": "앞으로 확인해야 할 사항입니다.",
+      "source": "테스트 출처",
+      "source_url": "https://example.com",
+      "published_at": "2026-11-12"
+    },
+    {
+      "rank": 2,
+      "category": "기업",
+      "title": "테스트 뉴스 제목 2",
+      "summary": "두 번째 뉴스 요약입니다.",
+      "what_happened": "발생한 일을 설명합니다.",
+      "background": "뉴스의 배경입니다.",
+      "why_it_matters": "중요한 이유입니다.",
+      "impact": "예상되는 영향입니다.",
+      "watch_point": "앞으로의 관전 포인트입니다.",
+      "source": "테스트 출처",
+      "source_url": "https://example.com",
+      "published_at": "2026-11-12"
+    },
+    {
+      "rank": 3,
+      "category": "국내 경제",
+      "title": "테스트 뉴스 제목 3",
+      "summary": "세 번째 뉴스 요약입니다.",
+      "what_happened": "발생한 일을 설명합니다.",
+      "background": "뉴스의 배경입니다.",
+      "why_it_matters": "중요한 이유입니다.",
+      "impact": "예상되는 영향입니다.",
+      "watch_point": "앞으로의 관전 포인트입니다.",
+      "source": "테스트 출처",
+      "source_url": "https://example.com",
+      "published_at": "2026-11-12"
+    }
+  ],
+  "page1": {
+    "title": "오늘의 경제 이슈 TOP 3",
+    "subtitle": "2026년 11월 12일",
+    "intro": "오늘의 핵심 경제 뉴스 세 가지",
+    "news_summary": [
+      {
+        "title": "테스트 뉴스 제목 1",
+        "summary": "첫 번째 뉴스 요약입니다."
+      },
+      {
+        "title": "테스트 뉴스 제목 2",
+        "summary": "두 번째 뉴스 요약입니다."
+      },
+      {
+        "title": "테스트 뉴스 제목 3",
+        "summary": "세 번째 뉴스 요약입니다."
+      }
+    ]
+  },
+  "page2": {
+    "title": "오늘의 핵심 이슈",
+    "news_title": "테스트 뉴스 제목 1",
+    "summary": "첫 번째 뉴스의 핵심 요약입니다.",
+    "what_happened": "어떤 일이 발생했는지 설명합니다.",
+    "background": "뉴스가 발생한 배경입니다.",
+    "impact": "우리 경제에 미치는 영향입니다.",
+    "watch_point": "앞으로 주목할 점입니다.",
+    "source": "테스트 출처"
+  },
+  "page3": {
+    "title": "함께 알아둘 경제 뉴스",
+    "news": [
+      {
+        "rank": 2,
+        "title": "테스트 뉴스 제목 2",
+        "summary": "두 번째 뉴스의 핵심 설명입니다.",
+        "impact": "예상되는 영향입니다."
+      },
+      {
+        "rank": 3,
+        "title": "테스트 뉴스 제목 3",
+        "summary": "세 번째 뉴스의 핵심 설명입니다.",
+        "impact": "예상되는 영향입니다."
+      }
+    ]
+  },
+  "page4": {
+    "title": "오늘의 핵심 정리",
+    "key_points": [
+      "첫 번째 뉴스 핵심 정리",
+      "두 번째 뉴스 핵심 정리",
+      "세 번째 뉴스 핵심 정리"
+    ],
+    "watch_points": [
+      "앞으로 주목할 경제 변수",
+      "추가로 확인할 주요 뉴스"
+    ],
+    "final_message": "경제 뉴스는 흐름을 이해하는 것이 중요합니다."
+  },
+  "instagram_caption": "오늘의 주요 경제 이슈 TOP 3를 정리했습니다.",
+  "hashtags": [
+    "#경제뉴스",
+    "#경제공부",
+    "#재테크",
+    "#투자공부"
+  ]
+}
